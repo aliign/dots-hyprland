@@ -4,6 +4,7 @@ if is_file_exists(HOME .. "/.config/hypr/custom/variables.lua") then
     require("custom.variables")
 end
 
+if not is_file_exists(HOME .. "/.config/hypr/custom/keybinds.lua") then
 local qsScripts = "$HOME/.config/quickshell/$qsConfig/scripts"
 local hyprScripts = "$HOME/.config/hypr/hyprland/scripts"
 local qsIpcCall = "qs -c $qsConfig ipc call"
@@ -357,3 +358,4 @@ hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd(taskManager), { description = "
 --# Cursed stuff
 --## Make window not amogus large
 hl.bind("CTRL + SUPER + Backslash", hl.dsp.window.resize({ x = 640, y = 480, "exact" }))
+end
