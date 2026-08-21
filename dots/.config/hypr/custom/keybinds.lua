@@ -48,7 +48,7 @@ hl.bind("CTRL + SUPER + R", hl.dsp.exec_cmd("killall ydotool qs quickshell; qs -
 
 -- launch apps
 hl.bind("SUPER + H", hl.dsp.exec_cmd("kitty"))
-hl.bind("SUPER + B", hl.dsp.exec_cmd("waterfox"))
+hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("SUPER + F", hl.dsp.exec_cmd("nautilus --new-window"))
 hl.bind("SUPER", hl.dsp.exec_cmd("pkill wofi || wofi --show drun"))
 hl.bind("SUPER + L", hl.dsp.global("quickshell:lock"))
