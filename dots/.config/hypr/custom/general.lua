@@ -14,3 +14,11 @@ hl.monitor ({
 	position = "0x0",
 	scale = 1,
 })
+
+hl.animation({
+    leaf = "workspaces",
+    enabled = true,
+    speed = 7,
+    bezier = "menu_decel",
+    style = "slidevert"
+})
